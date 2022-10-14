@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ *main -is the entry point for the program.
+ *
+ *Return:zero if no error.
+ */
+
 int main(void)
 
 {
