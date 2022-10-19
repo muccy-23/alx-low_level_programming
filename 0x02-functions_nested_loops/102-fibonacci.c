@@ -3,47 +3,42 @@
 
 
 /**
- * main - print first 50 Fibonacci numbers
- * Return: 0
+ * main - print fibonacci
+ *
+ * Return: always 0
  */
-
-
 
 int main(void)
 
 {
 
-	int counter;
+	long int a, b, c, d;
 
-	int max = 50;
+	a = 1;
 
-	long a = 1;
+	b = 2;
 
-	long b = 2;
+	c = 3;
 
+	printf("%ld, ", a);
 
+	printf("%ld, ", b);
 
-	for (counter = 1; counter <= (max / 2); counter++)
+	for (d = 3; d < 50; d++)
 
 	{
 
-		printf("%li %li ", a, b);
+		printf("%ld, ", c);
 
-		a += b;
+		a = b;
 
-		b += a;
+		b = c;
+
+		c = a + b;
 
 	}
 
-	if (max % 2 == 1)
-
-		printf("%li", a);
-
-
-
-	printf("\n");
-
-
+	printf("%ld\n", c);
 
 	return (0);
 
