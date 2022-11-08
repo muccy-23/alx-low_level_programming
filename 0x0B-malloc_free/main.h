@@ -8,6 +8,7 @@
  *       used in the 0x0B-malloc_free directory.
  */
 
+int _putchar(char);
 char *create_array(unsigned int size, char c);
 
 char *_strdup(char *str);
