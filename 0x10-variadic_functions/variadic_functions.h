@@ -18,7 +18,7 @@ typedef struct print
 }print_t;
 
 
-
+int _putchar(char c)
 int _putchar(char);
 
 int sum_them_all(const unsigned int n, ...);
