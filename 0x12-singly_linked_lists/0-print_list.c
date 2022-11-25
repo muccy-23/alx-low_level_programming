@@ -1,12 +1,11 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "lists.h"
+#include <stdio.h>
+
 /**
-  * print_list - Prints all elements of a list
-  * @h: A linked list
-  *
-  * Return: The number of nodes
-  */
+ * print_list - prints all elements of list_t list
+ * @h: linked list
+ * Return: number of nodes in linked list
+ */
 
 size_t print_list(const list_t *h)
 
@@ -30,9 +29,14 @@ size_t print_list(const list_t *h)
 
 
 
+		count++;
+
 		h = h->next;
 
-		count++;
 	}
+
+
+
 	return (count);
+
 }
